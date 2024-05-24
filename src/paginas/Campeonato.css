@@ -1,0 +1,56 @@
+/* Estilos gerais */
+.caixatexto {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+/* Estilos para o texto */
+.caixatexto p {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Media queries para responsividade */
+
+/* Para dispositivos móveis */
+@media (max-width: 600px) {
+  .caixatexto {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .caixatexto p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+/* Para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .caixatexto {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .caixatexto p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* Para desktops */
+@media (min-width: 1025px) {
+  .caixatexto {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .caixatexto p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
