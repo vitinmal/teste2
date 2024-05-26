@@ -35,17 +35,17 @@ const Home = () => {
        {
          breakpoint: 600, 
          settings: {
-           slidesToShow: 1, // Ajustar para um valor menor se necessário
+           slidesToShow: 1, 
            slidesToScroll: 1,
-           centerPadding: '10px', // Adicionar algum espaço em torno do carrossel
+           centerPadding: '10px', 
          },
        },
        {
          breakpoint: 480, 
          settings: {
-           slidesToShow: 1, // Ajustar para um valor menor se necessário
+           slidesToShow: 1, 
            slidesToScroll: 1,
-           centerPadding: '10px', // Adicionar algum espaço em torno do carrossel
+           centerPadding: '10px', 
          },
        },
      ],
@@ -72,6 +72,20 @@ const Home = () => {
           </div>
         </Slider>
       </div>
+      <>
+      <Slider {...settings}>
+          <div>
+            <a href="https://static.wixstatic.com/media/013386_fe6820b4e7f740cab5b875c0d9511bc2~mv2.jpg/v1/fill/w_427,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/D34_0147.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="https://static.wixstatic.com/media/013386_fe6820b4e7f740cab5b875c0d9511bc2~mv2.jpg/v1/fill/w_427,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/D34_0147.jpg" alt="Imagem 1" />
+            </a>
+          </div>
+          <div>
+            <a href="https://static.wixstatic.com/media/013386_0c308be2f12e458b8112fdeea07e4a21~mv2.jpg/v1/fill/w_427,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/D34_0569.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="https://static.wixstatic.com/media/013386_0c308be2f12e458b8112fdeea07e4a21~mv2.jpg/v1/fill/w_427,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/D34_0569.jpg" alt="Imagem 2" />
+            </a>
+          </div>
+        </Slider>
+      </>
       </main>
     
   );
