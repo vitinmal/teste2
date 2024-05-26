@@ -1,4 +1,6 @@
-/* Estilos gerais */
+*{
+  background-image: url(/src/componets/Degrade.png);
+}
 .caixatexto {
   padding: 20px;
   background-color: #f9f9f9;
@@ -7,16 +9,12 @@
   margin: 20px;
 }
 
-/* Estilos para o texto */
 .caixatexto p {
   margin: 10px 0;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* Media queries para responsividade */
-
-/* Para dispositivos móveis */
 @media (max-width: 600px) {
   .caixatexto {
     padding: 10px;
@@ -29,7 +27,6 @@
   }
 }
 
-/* Para tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
   .caixatexto {
     padding: 15px;
@@ -42,7 +39,6 @@
   }
 }
 
-/* Para desktops */
 @media (min-width: 1025px) {
   .caixatexto {
     padding: 20px;
