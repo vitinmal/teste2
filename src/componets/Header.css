@@ -9,7 +9,6 @@
 
 
 
-
 .menu a.active {
   color: rgb(183, 215, 168); 
 }
@@ -27,24 +26,16 @@
   }
 }
 
-
-.banner {
-  width: 100%;
-  height: 300px;
-  background: rgba(250, 250, 250, 0.904) url('./Logo_InstitutoRoma\ \(1\).png') center center;
-  background-size: cover;
-  position: relative;
-}
-
 .container {
-  max-width: 1080px;
-  width: 90%;
+ 
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
 }
+
+
 
 .logo {
   flex: 1;
@@ -58,7 +49,7 @@
 header {
   background-color: rgb(81, 116, 182);
   width: 100%;
-  padding: 10px;
+  
 }
 
 .logo, .sociais {

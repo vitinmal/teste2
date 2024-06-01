@@ -4,10 +4,11 @@ import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom'; 
 import './Header.css'; 
 
+
 const Header = () => {
   return (
     <header>
-      <div className='banner'></div>
+    
       <div className="container">
         
         <div className="menu">

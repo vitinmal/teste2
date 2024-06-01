@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './LeaderboardTable.css';
 
 const LeaderboardTable = () => {
@@ -13,11 +14,10 @@ const LeaderboardTable = () => {
   ];
 
   return (
-    <div className="leaderboard">
-      
-      <div className="table-container">
-        <table>
-          <thead>
+    <div className="leaderboard container mt-4">
+      <div className="table-responsive">
+        <table className="table table-bordered table-hover">
+          <thead className="thead-dark">
             <tr>
               <th>Posição</th>
               <th>Equipe</th>
@@ -41,6 +41,6 @@ const LeaderboardTable = () => {
       </div>
     </div>
   );
-}
+};
 
 export default LeaderboardTable;

@@ -1,69 +1,81 @@
-main{
+main {
   background-image: url(/src/componets/Degrade.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .home-container {
-  width: 100%;
-  margin: 0 auto;
+  width: 60%;
+  margin: 0 auto; 
   padding-top: 20px;
- 
+  text-align: center; 
 }
 
-.lorem-text {
-  margin-bottom: 20px;
-  font-size: 16px;
-  text-align: center;
+.banner-container {
+  width: 100%;
+  max-width: 1080px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.text-container {
+  margin: 20px auto;
   padding: 0 20px;
 }
-.carousel {
-  width: 100%;
-  max-width: 460px;
-  margin: 0 auto;
-  position: relative;
-  border-radius: 20%;
-}
-.carousel-dots {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 20%;
+
+.text-container h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center; 
 }
 
-img {
-  
-  overflow: hidden;
-  object-fit: contain;
- 
-  width: 100%; 
-  height: 100%; 
+.text-container p {
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0; 
 }
 
 @media screen and (max-width: 768px) {
-  .lorem-text {
-    font-size: 14px; 
+  .home-container {
+    width: 80%;
+  }
+  
+  .text-container p {
+    font-size: 14px;
     padding: 0 15px;
   }
 
-  .carousel {
-    max-width: 90%; /* Ajustado para não preencher toda a div */
-    border-radius: 20%; 
+  .banner-container {
+    max-width: 90%;
+  }
+
+  .text-container h2 {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .lorem-text {
-    font-size: 12px; 
-    padding: 0 10px; 
+  .home-container {
+    width: 90%;
   }
 
-  .carousel-dots {
-    bottom: 10px; 
+  .text-container p {
+    font-size: 12px;
+    padding: 0 10px;
   }
 
-  .carousel {
-    max-width: 80%; /* Ajustado para não preencher toda a div */
+  .banner-container {
+    max-width: 80%;
+  }
+
+  .text-container h2 {
+    font-size: 18px;
   }
 }
