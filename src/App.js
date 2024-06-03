@@ -1,4 +1,4 @@
-// src/App.js
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './componets/Header';
@@ -15,6 +15,7 @@ function App() {
         <Route path="/campeonato" element={<Campeonato />} />
         {/* Adicione outras rotas conforme necessário */}
       </Routes>
+      
       <FooterComponent />
     </Router>
   );
