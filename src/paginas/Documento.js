@@ -5,7 +5,7 @@ import documentFile from '../componets/Regulamento.pdf'; // Caminho correto para
 
 const Documento = () => {
   return (
-    <main className="main-container bg-light">
+    <main className="main-container-documento bg-light">
       <div className="container py-4 d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
         <div className="row justify-content-center">
           <div className="col-md-8 mb-4">
