@@ -5,6 +5,7 @@ import Header from './componets/Header';
 import FooterComponent from './componets/FooterComponent';
 import Home from './paginas/Home';
 import Campeonato from './paginas/Campeonato';
+import Documento from './paginas/Documento';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/campeonato" element={<Campeonato />} />
+        <Route path="/documento" element={<Documento />}/>
         {/* Adicione outras rotas conforme necessário */}
       </Routes>
       

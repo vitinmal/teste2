@@ -1,50 +1,62 @@
+.main-container {
+  background-image: url('../componets/Degrade.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column; 
+}
 
-.caixatexto {
-  padding: 20px;
-  background-color: #f9f9f9;
+.containerCamp {
+  background-image: url('../componets/Degrade.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.carousel-custom {
+  width: 70%;
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid #2f2f2f;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px;
 }
 
-.caixatexto p {
-  margin: 10px 0;
+.documento-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Garante que o container ocupe a altura total da viewport */
+}
+
+.documento-texto {
   font-size: 1rem;
   line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9b0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%; 
+  max-width: 800px; 
+  text-align: center;
+  margin: 0 auto; 
 }
 
-@media (max-width: 600px) {
-  .caixatexto {
-    padding: 10px;
-    margin: 10px;
-  }
-
-  .caixatexto p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  .caixatexto {
-    padding: 15px;
-    margin: 15px;
-  }
-
-  .caixatexto p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width: 1025px) {
-  .caixatexto {
-    padding: 20px;
-    margin: 20px;
-  }
-
-  .caixatexto p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+.download-btn-container {
+  position: sticky;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(0%);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }

@@ -1,83 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Titillium Web', sans-serif;
+  background-image: url('../componets/Degrade.png'); 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7); 
+  border-radius: 10px;
+}
 
-.table-responsive {
-  margin-top: 10px;
+.group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.group h2 {
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
-  background-color: rgba(128, 128, 128, 0.548);
+  margin-bottom: 20px;
 }
 
-.table th, .table td {
+.table th,
+.table td {
   padding: 10px;
   text-align: center;
+  border: 1px solid #ddd;
 }
 
-.table thead th {
-  background-color: #343a40;
-  color: white;
+.table th {
+  background-color: #444;
+  color: #fff;
 }
 
-.table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+.team-name {
+  font-weight: bold;
+  color: #f0db4f;
 }
 
-.table tbody tr:hover {
-  background-color: #e2f2ff;
+button {
+  background: none;
+  border: none;
+  color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
-/* Media queries para responsividade */
-@media (max-width: 600px) {
-  h2 {
-    font-size: 1.2rem;
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  color: #f0db4f;
+}
+
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    width: 100%;
     padding: 10px;
   }
 
-  .table th, .table td {
-    padding: 8px;
+  .table th,
+  .table td {
     font-size: 0.8rem;
   }
 
-  .table {
-    font-size: 0.9rem;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  h2 {
-    font-size: 1.5rem;
-    padding: 12px;
-  }
-
-  .table th, .table td {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-
-  .table {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  h2 {
-    font-size: 1.8rem;
-    padding: 15px;
-  }
-
-  .table th, .table td {
-    padding: 12px;
-    font-size: 1rem;
-  }
-
-  .table {
-    font-size: 1rem;
+  button {
+    margin: 0 2px;
   }
 }

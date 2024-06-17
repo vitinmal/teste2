@@ -5,10 +5,9 @@ import Uberlandialogorodape from './Uberlandialogorodape.png';
 function FooterComponent() {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="containerFooter">
         <img className='logobaixo' src={Uberlandialogorodape} alt="Uberlandialogorodape" />
-         <p>| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius massa euismod
-           magna sollicitudin.</p>
+         <p>|© 2024 Copa Futsal Multivix-Uberlandia</p>
 
         </div>
     </footer>
