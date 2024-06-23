@@ -43,11 +43,7 @@ const Campeonato = () => {
             </div>
           </div>
         </div>
-        <div className="documento-container">
-          <div className="documento-texto">
-            
-          </div>
-        </div>
+       
       </div>
     </main>
   );

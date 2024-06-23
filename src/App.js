@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/campeonato" element={<Campeonato />} />
         <Route path="/documento" element={<Documento />}/>
-        {/* Adicione outras rotas conforme necessário */}
+        
       </Routes>
       
       <FooterComponent />
